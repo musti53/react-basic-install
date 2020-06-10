@@ -14,6 +14,8 @@ jobs:
           node-version: 12
       - name: Prepare for Yarn Installation
         run: Borales/actions-yarn@v2.3.0
+        with:
+          cmd: install  
       - name: install yarn
         run: sudo apt update && sudo apt install yarn
       - name: Build React App
