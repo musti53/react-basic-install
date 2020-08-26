@@ -29,11 +29,16 @@ jobs:
       uses: Borales/actions-yarn@v2.1.0
       with:
         # Yarn command
+<<<<<<< HEAD
         cmd: install # npm install/ yarn install
     
     - name: Creating build
       run: yarn build
     
+=======
+        cmd: install # npm nstall/ yarn install
+        
+>>>>>>> d2e19374ae9ed47c2b18f22de35cf76d319efed7
     - name: installing surge  
       run: npm install -g surge
     
